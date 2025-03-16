@@ -4,7 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/SignupPage";
 import CreatePoll from "./CreatePoll";
 import PollsList from "./PollsList";
-import UpdatePoll from "./UpdatePoll"; // Import UpdatePoll component
+import UpdatePoll from "./UpdatePoll";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

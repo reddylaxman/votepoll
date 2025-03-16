@@ -40,7 +40,7 @@ const CreatePoll = () => {
       return;
     }
 
-    const voterId = localStorage.getItem("voterId"); // Fetch voter ID
+    const voterId = localStorage.getItem("voterId");
     if (!voterId) {
       alert("You must be logged in to create a poll.");
       navigate("/login");
@@ -55,8 +55,8 @@ const CreatePoll = () => {
         },
         body: JSON.stringify({
           question: question.trim(),
-          options: trimmedOptions.map((text) => ({ text, votes: 0 })), // Ensure options are formatted correctly
-          createdBy: voterId, // Store voter ID as poll creator
+          options: trimmedOptions.map((text) => ({ text, votes: 0 })),
+          createdBy: voterId,
         }),
       });
 

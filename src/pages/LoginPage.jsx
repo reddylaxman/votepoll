@@ -35,7 +35,7 @@ const LoginPage = () => {
         window.alert("Login successful!");
         console.log("Login Successful");
 
-        localStorage.setItem("voterId", data.voterId); // ✅ Correctly store voterId
+        localStorage.setItem("voterId", data.voterId);
         navigate("/polls");
       } else {
         alert(data.error || "Invalid username or password.");
